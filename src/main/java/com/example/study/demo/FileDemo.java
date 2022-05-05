@@ -1,4 +1,4 @@
-package com.example.study;
+package com.example.study.demo;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
@@ -30,6 +30,6 @@ public class FileDemo {
         String fileName = "settings/info.json";
         JSONObject json = FileDemo.fileToJson(fileName);
         List<FileModel.ButtonInfo> list = JSONArray.parseArray(json.getJSONArray("button").toString(), FileModel.ButtonInfo.class);
-        System.out.println(list);
+        System.out.println(JSONArray.toJSON(list));
     }
 }
