@@ -18,7 +18,7 @@ import org.apache.commons.lang3.exception.ExceptionUtils;
 public  class OkHttpUtil {
 
 
-    private static  final  String token="Bearer 6a7122a2-62d2-42a3-9057-5ecd253b79ce";
+    private static  final  String token="Bearer 7444c567-ec64-4c81-9712-732f1f8f38c4";
 
     /**
      * 根据map获取get请求参数

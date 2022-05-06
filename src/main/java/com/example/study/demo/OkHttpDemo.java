@@ -12,6 +12,14 @@ import java.util.Map;
  **/
 public class OkHttpDemo {
     public static void main(String[] args) {
-        System.out.print( OkHttpUtil.postFormParams("https://fat-hdsaas.facehand.cn/gateway/saas-statistics-service/api/v1/procure/goods_list",null));
+        Map<String,String> param=new HashMap<>();
+        param.put("beginTime","1651334400000");
+        param.put("endTime","1651852799999");
+        param.put("pageNum","1");
+        param.put("pageSize","30");
+        param.put("sortField","DiscountAfterTotal");
+        param.put("sortType","DESC");
+        param.put("statType","SKU");
+        System.out.print( OkHttpUtil.postFormParams("https://dev-hdsaas.facehand.cn/gateway/saas-statistics-service/api/v1/procure/goods_list",param));
     }
 }
